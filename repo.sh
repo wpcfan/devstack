@@ -26,7 +26,7 @@ repos=(
     "https://github.com/wpcfan/edx-platform.git"
 )
 
-name_pattern=".*edx/(.*).git"
+name_pattern=".*/(.*).git"
 
 clone ()
 {
