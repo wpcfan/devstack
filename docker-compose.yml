@@ -86,7 +86,7 @@ services:
     environment:
       CACHE_LOCATION: edx.devstack.memcached:12211
       DB_HOST: edx.devstack.mysql
-      SOCIAL_AUTH_EDX_OIDC_URL_ROOT: http://edx.devstack.lms:18000/oauth2
+      SOCIAL_AUTH_EDX_OIDC_URL_ROOT: http://localhost:18000/oauth2
       ENABLE_DJANGO_TOOLBAR: 1
     image: edxops/credentials:devstack-slim
     ports:
