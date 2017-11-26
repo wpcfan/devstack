@@ -36,5 +36,5 @@ docker-compose exec lms bash -c '/edx/app/edx_ansible/venvs/edx_ansible/bin/ansi
 
 # Create static assets for both LMS and Studio
 for app in "${apps[@]}"; do
-    docker-compose exec $app bash -c 'source /edx/app/edxapp/edxapp_env && cd /edx/app/edxapp/edx-platform && paver update_assets --settings devstack_docker'
+    docker-compose exec $app bash -c 'source /edx/app/edxapp/edxapp_env && cd /edx/app/edxapp/edx-platform && paver install_prereqs && paver update_assets --settings devstack_docker'
 done
